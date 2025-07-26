@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Girlfriend's Day</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="heart-canvas"></canvas>
+  <div class="message-box">
+    <h1>HAPPY GIRLFRIEND'S DAY MY BABYYYY 🩷</h1>
+    <p>You’re da reason im so happy happy</p>
+    <button onclick="showLove()">Tap here</button>
+    <div id="love-message" class="hidden">
+      <p>You’re my world, my everything.  
+      I love you more than I can ever write in words, I love you alot you're the best 💗</p>
+      <a href="https://zipiplaysgaming.github.io/love-letter/" target="_blank">Read my letter →</a>
+    </div>
+  </div>
+  <script src="hearts.js"></script>
+  <script>
+    function showLove() {
+      document.getElementById('love-message').classList.remove('hidden');
+    }
+  </script>
+</body>
+</html>

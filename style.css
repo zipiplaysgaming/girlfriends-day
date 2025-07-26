@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  font-family: 'Comic Sans MS', sans-serif;
+  background-color: #ffeff7;
+  overflow: hidden;
+}
+
+#heart-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.message-box {
+  position: relative;
+  z-index: 2;
+  padding: 40px;
+  text-align: center;
+  color: #ff3f81;
+  max-width: 600px;
+  margin: 100px auto;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(255, 63, 129, 0.3);
+}
+
+button {
+  padding: 12px 24px;
+  font-size: 16px;
+  background-color: #ff3f81;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background-color: #ff1f6a;
+}
+
+#love-message {
+  margin-top: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #ff3f81;
+  text-decoration: none;
+  font-weight: bold;
+}
