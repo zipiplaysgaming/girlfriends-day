@@ -1,28 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Happy Girlfriend's Day</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <canvas id="heart-canvas"></canvas>
-  <div class="message-box">
-    <h1>HAPPY GIRLFRIEND'S DAY MY BABYYYY 🩷</h1>
-    <p>You’re da reason im so happy happy</p>
-    <button onclick="showLove()">Tap here</button>
-    <div id="love-message" class="hidden">
-      <p>You’re my world, my everything.  
-      I love you more than I can ever write in words, I love you alot you're the best 💗</p>
-      <a href="https://zipiplaysgaming.github.io/love-letter/" target="_blank">Read my letter →</a>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Girlfriend's Day</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <canvas id="heart-canvas"></canvas>
+    <div class="message-box">
+      <h1>HAPPY GIRLFRIEND'S DAY MY BABYYYY 🩷</h1>
+      <p>You’re da reason im so happy happy</p>
+      <button onclick="showLove()">Tap here</button>
+      <div id="love-message" class="hidden">
+        <p id="compliment-box"></p>
+        <a
+          href="https://zipiplaysgaming.github.io/love-letter/">Read
+          my letter →</a><br>
+        <a
+          href="https://zipiplaysgaming.github.io/photos/">Photos
+          📸</a><br>
+        <a
+          href="https://zipiplaysgaming.github.io/reasons/">Reasons
+          Why I Love You 💌</a><br>
+        <a
+          href="https://zipiplaysgaming.github.io/day-counter/">Day
+          Counter ❤️</a>
+      </div>
     </div>
-  </div>
-  <script src="hearts.js"></script>
-  <script>
+    <script src="hearts.js"></script>
+    <script>
     function showLove() {
       document.getElementById('love-message').classList.remove('hidden');
     }
   </script>
-</body>
+    <div id="loader">
+      <div class="heart-loader">❤️</div>
+    </div>
+
+    <script>
+  // Loading animation
+  window.addEventListener('load', () => {
+    document.getElementById('loader').style.display = 'none';
+  });
+
+  // Compliment Generator
+  function showLove() {
+    const compliments = [
+      "You light up my world like no one else",
+      "Your smile makes me go dokidoki",
+      "You're my favorite notification",
+      "You make me believe in love more each day",
+      "Your laugh is my favorite sound hehe",
+      "Even when you're grumpy, you're adorable and so cute",
+      "I could look at you forever and not get tired",
+      "You're cuter than every cat video on the internet ( you are a cat )",
+      "You make me feel lucky every single day",
+      "You're my safe and comfy space"
+    ];
+    const box = document.getElementById("compliment-box");
+    box.innerText = compliments[Math.floor(Math.random() * compliments.length)];
+    document.getElementById('love-message').classList.remove('hidden');
+  }
+</script>
+  </body>
 </html>
